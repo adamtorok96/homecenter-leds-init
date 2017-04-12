@@ -6,7 +6,7 @@ static int leds[3] = {12, 13, 14};
 
 int main(int argc, char * args[]) {
 
-    if( wiringPiSetup() == -1 )
+    if( wiringPiSetupSys() == -1 )
         return 1;
 
     int i;
