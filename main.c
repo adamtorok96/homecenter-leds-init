@@ -33,6 +33,16 @@ int main(int argc, char * args[]) {
         delay(30);
         softPwmWrite(leds[0], 0);
         delay(30);
+
+        softPwmWrite(leds[1], 100);
+        delay(30);
+        softPwmWrite(leds[1], 0);
+        delay(30);
+
+        softPwmWrite(leds[2], 100);
+        delay(30);
+        softPwmWrite(leds[2], 0);
+        delay(30);
     }
 
 
