@@ -18,6 +18,7 @@ int main(int argc, char * args[]) {
     delay(50);
 
     while(1) {
+        /*
         for(i = 50; i < 100; i++) {
             softPwmWrite(leds[0], i);
             delay(30);
@@ -26,7 +27,12 @@ int main(int argc, char * args[]) {
         for(i = 100; i >= 50; i--) {
             softPwmWrite(leds[0], i);
             delay(30);
-        }
+        } */
+
+        softPwmWrite(leds[0], 100);
+        delay(30);
+        softPwmWrite(leds[0], 0);
+        delay(30);
     }
 
 
